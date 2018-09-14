@@ -15,6 +15,7 @@ class CfgRemoteExec {
     class Functions {
         mode = 1;
         jip = 1;
+        #include "The-Programmer\theprogrammer_remoteExec_master.cpp" 
         #include "maverick\maverick_remoteExec_master.cpp"
         #include "Lega\Lega_RemoteExec.hpp"
 
