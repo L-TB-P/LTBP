@@ -277,9 +277,12 @@ class playerSettings {
         };
 
         class GovernementMenu: Life_RscButtonMenu {
-            
-            text = "";
+            x = 0.1;
+            y = 0.85;
+            w = (6.25 / 40);
+            h = (1 / 25);            
+            text = "Governement";
             onButtonClick = "[] spawn max_gouvernement_fnc_selectGovernementMenu;"; 
-           };
+       };
     };
 };
