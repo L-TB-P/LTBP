@@ -116,7 +116,7 @@ class Lega_XphoneOptions
  class DynaMarket
 {
     displayName = "Dynmarket";
-    onCall = "createDialog 'life_dynmarket_prices';";
+    onCall = "createDialog ""marketView"";";
     image = "Contacts.paa";
     conditions = "";
 };
