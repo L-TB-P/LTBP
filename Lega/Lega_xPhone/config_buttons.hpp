@@ -92,4 +92,32 @@ class Lega_XphoneOptions
     onCall = "['Lega_xPhone_AdminMessage_Main'] spawn Lega_fnc_changeMenu";
     image = "admin-menu.paa";
   };
+  class GovernementMenu
+  {
+    displayName = "GovernementMenu";
+    onCall = "['Lega_xPhone_GovernementMenu'] spawn max_gouvernement_fnc_selectGovernementMenu";
+    image = "Contacts.paa";
+    conditions = "";
+  };
+   class taxi
+  {
+    displayName = "TAXI";
+    onCall = "createDialog ""RscDisplayTaxiMenu"";";
+    image = "Taxi.paa";
+    conditions = "";
+  };
+  class Adminmenu
+ {
+ displayName = "Admin Menu";
+ onCall = "closeDialog 0; createDialog ""life_admin_menu"";";
+ image = "admin-menu.paa";
+ conditions = "((call life_adminlevel) > 1)";
+ };
+ class DynaMarket
+{
+    displayName = "Dynmarket";
+    onCall = "createDialog ""marketView"";";
+    image = "Contacts.paa";
+    conditions = "";
+};
 };
