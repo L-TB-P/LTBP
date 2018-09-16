@@ -102,7 +102,7 @@ class Lega_XphoneOptions
   class TaxiMenu
   {
     displayName = "TaxiMenu";
-    onCall = "['Lega_xPhone_TaxiMenu'] spawn  RscDisplayTaxiMenu";
+    onCall = "['Lega_xPhone_TaxiMenu'] createDialog RscDisplayTaxiMenu";
     image = "Contacts.paa";
     conditions = "";
   };
