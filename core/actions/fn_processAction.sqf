@@ -121,7 +121,7 @@ if (_hasLicense) then {
 
     for "_i" from 0 to 1 step 0 do {
         uiSleep  0.9;
-        _cP = _cP + 0.01;
+        _cP = _cP + (0.01 * (missionNamespace getVariable ["mav_ttm_var_processMultiplier", 1])); 
         _progress progressSetPosition _cP;
         _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",_upp];
         if (_cP >= 1) exitWith {};
