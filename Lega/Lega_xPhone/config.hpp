@@ -1,8 +1,8 @@
 class xPhoneMain {
   phoneNumberPrefix = "+09";//the prefix for you phone numbers.
-  phoneNumberLength = 8; // the amount of numbers after the prefix.
+  phoneNumberLength = 9; // the amount of numbers after the prefix.
   phoneNumberStart = 0;// the first number after the prefix // -1 if it doesn't matter.
-  ServerTag = "ltbp";//PLX make this uniqeee
+  ServerTag = "ltbp2";//PLX make this uniqeee
   olduseItem = false;// set this to tru if you want to use the old useItem Function
   //Please Don't change this if you don't know what you are doing, this is to intergrate control groups into the animations
   allMenus[] = {
