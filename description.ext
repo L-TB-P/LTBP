@@ -29,6 +29,7 @@ class RscTitles {
 class CfgFunctions {
     #include "Functions.hpp"
     #include "maverick\maverick_functions_master.cpp"
+    #include "GRAD_fireworks\cfgFunctions.hpp"
 };
 
 class CfgSounds {
