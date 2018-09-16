@@ -113,4 +113,11 @@ class Lega_XphoneOptions
  image = "admin-menu.paa";
  conditions = "((call life_adminlevel) > 1)";
  };
+ class DynaMarket
+{
+    displayName = "Dynmarket";
+    onCall = "createDialog 'life_dynmarket_prices';";
+    image = "Contacts.paa";
+    conditions = "";
+};
 };
