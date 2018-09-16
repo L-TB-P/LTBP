@@ -38,10 +38,10 @@ class maverick_taxis_cfg {
 		msgMainInfoNoTaxiCalled	=			"<t size='2'>アクティブなタクシーコールはありません！</t><br/><t>[コールタクシー]をクリックしてタクシーリクエストを作成します</t><br/><br/><t font='RobotoCondensedBold'>利用可能なタクシー: %1</t>";
 		msgMainInfoNoTaxiYet =				"<t size='2'>タクシーが呼ばれました！</t><br/><t>タクシーはまだあなたのタクシーコールを受諾していません。タクシーが受諾そうしたら通知されます！</t><br/><br/><t font='RobotoCondensedBold'>利用可能なタクシー: %1</t>";
 		msgTaxiCalled = 					"タクシーのリクエストが作成されました";
-		msgTaxiCancelled = 					"Your current taxi request has been cancelled!";
+		msgTaxiCancelled = 					"現在のタクシーのリクエストはキャンセルされました";
 		msgTaxiFareCancelled =				"あなたは運賃をキャンセルしました";
 		msgTaxiCancelConfirm =				"タクシー運転手があなたの要求を受け、あなたの元へ向かっています。キャンセルしてもよろしいですか？";
-		msgTaxiCancelHeader	=				"Cancel Taxi Call";
+		msgTaxiCancelHeader	=				"タクシーコールをキャンセル";
 		msgTaxiCancelButtonConfirm =		"Yes";
 		msgTaxiCancelButtonCancel =			"No";
 		msgTaxiCancelDriverConfirm =		"運賃をキャンセルしてもよろしいですか？既に基本価格がお客様に転送されている場合は、再度その価格が顧客に返還されます";
@@ -98,7 +98,7 @@ class maverick_taxis_cfg {
 
 		#define dialogCallTaxiTitle			"タクシーサービス"
 		#define dialogCancelTaxi			"タクシー要請をキャンセル"
-		#define dialogClose					"Close"
+		#define dialogClose					"閉じる"
 		#define dialogTaxiMeter				"タクシーメーター"
 		#define dialogTaxiFareList			"受諾待ちタクシーコール"
 		#define dialogTaxiGoOnDuty			"業務を開始"
@@ -120,7 +120,7 @@ class maverick_taxis_cfg {
 		#define dialogSettingsReset			"リセット"
 		#define dialogDragMe				"ドラッグして任意の場所へ移動"
 		#define dialogFareSummaryTitle		"運賃概要"
-		#define dialogSummaryClosePromt		"[ALT]+[T] to close"
+		#define dialogSummaryClosePromt		"[ALT]+[T] で閉じる"
 		#define dialogAvaibleDrivers		"勤務中のタクシー"
 	};
 };
