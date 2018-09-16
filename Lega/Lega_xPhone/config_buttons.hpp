@@ -102,8 +102,15 @@ class Lega_XphoneOptions
    class taxi
   {
     displayName = "TAXI";
-    onCall = "createDialog 'RscDisplayTaxiMenu';";
+    onCall = "createDialog ""RscDisplayTaxiMenu"";";
     image = "Contacts.paa";
     conditions = "";
+  };
+  class AdminMenu
+  {
+    displayName = "Admin";
+    onCall = "closeDialog 0; createDialog ""life_admin_menu"";"
+    image = "Contacts.paa";
+    conditions = "call life_adminlevel > 0";
   };
 };
