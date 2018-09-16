@@ -116,7 +116,7 @@ switch (_code) do {
             if (player getVariable ["playerSurrender",false]) then {
                 player setVariable ["playerSurrender",false,true];
             } else {
-                [] spawn life_fnc_surrender;
+                 [] spawn life_fnc_surrender; 
             };
             _handled = true;
         };

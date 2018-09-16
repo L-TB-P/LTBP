@@ -286,13 +286,13 @@ class playerSettings {
             h = (1 / 25); 
         };
 
-        class GovernementMenu: Life_RscButtonMenu {
-            x = 0.1;
-            y = 0.85;
-            w = (6.25 / 40);
-            h = (1 / 25);            
-            text = "Governement";
-            onButtonClick = "[] spawn max_gouvernement_fnc_selectGovernementMenu;"; 
+
+        class ButtonGovernement : Life_RscButtonMenu
+       {
+           idc = 2107;
+           onbuttonclick = "closeDialog 0; [] spawn max_gouvernement_fnc_selectGovernementMenu;";
+           
        };
+
     };
 };

@@ -25,10 +25,10 @@ _textSpoiler = _display displayCtrl 1101;
 _text2 = _display displayCtrl 1102;
 
 _message = "";
-_message = _message + "<t align='center' size='8' shadow='0'>AsYetUntitled</t><br /><br />";
-_message = _message + "AsYetUntitled, formerly Altis Life RPG and ARMARPGLIFE is a roleplay framework for ArmA III originally made by TAW_Tonic.<br /><br />";
-_message = _message + "Useful links for server owners:<br /><br />";
-_message = _message + "<a color='#00DFFF'>•</a> Github: <a href='https://github.com/AsYetUntitled/Framework' color='#56BDD6'> https://github.com/AsYetUntitled/Framework</a><br />";
+_message = _message + "<t align='center' size='8' shadow='0'>TB Life</t><br /><br />";
+_message = _message + "TB-Life<br /><br />";
+_message = _message + "Test:<br /><br />";
+_message = _message + "<a color='#00DFFF'>•</a> HP: <a href='https://trashbox-a3.com/' color='#56BDD6'> https://trashbox-a3.com</a><br />";
 _message = _message + "<a color='#00DFFF'>•</a> Wiki: <a href='https://github.com/AsYetUntitled/Framework/wiki' color='#56BDD6'> https://github.com/AsYetUntitled/Framework/wiki</a><br />";
 _message = _message + "<a color='#00DFFF'>•</a> Releases (Stable Builds): <a href='https://github.com/AsYetUntitled/Framework/releases' color='#56BDD6'> https://github.com/AsYetUntitled/Framework/releases</a><br />";
 _message = _message + "<a color='#00DFFF'>•</a> Discord: <a href='https://discord.gg/ajGUDSH' color='#56BDD6'> https://discord.gg/ajGUDSH</a><br /><br />";

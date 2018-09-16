@@ -131,6 +131,7 @@ publicVariableServer "life_fnc_RequestClientId"; //Variable OwnerID for Headless
 waitUntil {(missionNamespace getVariable ["life_perksInitialized", true])};
 life_paycheck = life_paycheck * (missionNamespace getVariable ["mav_ttm_var_paycheckMultiplier", 1]);
 
+
 [] spawn {
     for "_i" from 0 to 1 step 0 do {
         waitUntil {(!isNull (findDisplay 49)) && {(!isNull (findDisplay 602))}}; // Check if Inventory and ESC dialogs are open

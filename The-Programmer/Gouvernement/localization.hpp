@@ -30,7 +30,7 @@ class Gouvernement_Localization {
 		es = "Detener Votacion";
 	};
 	class STR_ELECTION_GOUVERNEMENT {
-		en = "政府選挙";
+		en = "Government Elections";
 		fr = "Elections du gouvernement";
 		de = "Regierungs Wahl";
 		es = "Elecciones Gubernamentales";
