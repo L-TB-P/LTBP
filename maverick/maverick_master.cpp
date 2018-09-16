@@ -4,7 +4,7 @@
 
 
 
-
+#include "speedcameras\config.cpp"
 
 
 

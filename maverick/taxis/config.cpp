@@ -35,7 +35,7 @@ class maverick_taxis_cfg {
 
 	class localization {
 		// Localization
-		msgMainInfoNoTaxiCalled	=			"<t size='2'>アクティブなタクシーコールはありません！</t><br/><t>[コールタクシー]をクリックしてタクシーリクエストを作成します</t><br/><br/><t font='RobotoCondensedBold'>利用可能なタクシー: %1</t>";
+		msgMainInfoNoTaxiCalled	=			"<t size='2'>アクティブなタクシーコールはありません</t><br/><t>[コールタクシー]をクリックしてタクシーリクエストを作成します</t><br/><br/><t font='RobotoCondensedBold'>利用可能なタクシー: %1</t>";
 		msgMainInfoNoTaxiYet =				"<t size='2'>タクシーが呼ばれました！</t><br/><t>タクシーはまだあなたのタクシーコールを受諾していません。タクシーが受諾そうしたら通知されます！</t><br/><br/><t font='RobotoCondensedBold'>利用可能なタクシー: %1</t>";
 		msgTaxiCalled = 					"タクシーのリクエストが作成されました";
 		msgTaxiCancelled = 					"現在のタクシーのリクエストはキャンセルされました";
