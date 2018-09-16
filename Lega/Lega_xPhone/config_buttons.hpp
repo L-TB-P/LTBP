@@ -103,14 +103,14 @@ class Lega_XphoneOptions
   {
     displayName = "TAXI";
     onCall = "createDialog ""RscDisplayTaxiMenu"";";
-    image = "Contacts.paa";
+    image = "Taxi.paa";
     conditions = "";
   };
-  class AdminMenu
-  {
-    displayName = "Admin";
-    onCall = "closeDialog 0; createDialog ""life_admin_menu"";"
-    image = "Contacts.paa";
-    conditions = "call life_adminlevel > 0";
-  };
+  class Adminmenu
+ {
+ displayName = "Admin Menu";
+ onCall = "closeDialog 0; createDialog ""life_admin_menu"";";
+ image = "admin-menu.paa";
+ conditions = "((call life_adminlevel) > 1)";
+ };
 };
