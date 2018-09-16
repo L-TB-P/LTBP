@@ -147,3 +147,5 @@ if (_hasLicense) then {
     life_action_inUse = false;
     ["ItemProcessed"] spawn mav_ttm_fnc_addExp;
 };
+
+["VehicleLockpicked"] spawn mav_ttm_fnc_addExp;
