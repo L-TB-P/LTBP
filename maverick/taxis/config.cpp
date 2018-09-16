@@ -11,7 +11,7 @@
 class maverick_taxis_cfg {
 	class pricing {
 		pricePerKilometre 					= 500; // Dollars
-		basePrice							= 1000; // Price at which billing starts, required to call a taxi
+		basePrice							= 700; // Price at which billing starts, required to call a taxi
 		moneyHandVariable					= "life_cash";
 		moneyBankVariable					= "life_atmbank";
 		paymentSource						= "BOTH";
@@ -35,93 +35,93 @@ class maverick_taxis_cfg {
 
 	class localization {
 		// Localization
-		msgMainInfoNoTaxiCalled	=			"<t size='2'>You do not have an active taxi call!</t><br/><t>Click on 'Call Taxi' to create a taxi request for all available taxi drivers to see!</t><br/><br/><t font='RobotoCondensedBold'>Available Taxi Drivers: %1</t>";
-		msgMainInfoNoTaxiYet =				"<t size='2'>A taxi has been called!</t><br/><t>No taxi driver has accepted your request yet though. You will be notified once a taxi driver does so!</t><br/><br/><t font='RobotoCondensedBold'>Available Taxi Drivers: %1</t>";
-		msgTaxiCalled = 					"A taxi request has been created!";
+		msgMainInfoNoTaxiCalled	=			"<t size='2'>アクティブなタクシーコールはありません！</t><br/><t>[コールタクシー]をクリックしてタクシーリクエストを作成します</t><br/><br/><t font='RobotoCondensedBold'>利用可能なタクシー: %1</t>";
+		msgMainInfoNoTaxiYet =				"<t size='2'>タクシーが呼ばれました！</t><br/><t>タクシーはまだあなたのタクシーコールを受諾していません。タクシーが受諾そうしたら通知されます！</t><br/><br/><t font='RobotoCondensedBold'>利用可能なタクシー: %1</t>";
+		msgTaxiCalled = 					"タクシーのリクエストが作成されました";
 		msgTaxiCancelled = 					"Your current taxi request has been cancelled!";
-		msgTaxiFareCancelled =				"You have cancelled the fare";
-		msgTaxiCancelConfirm =				"A taxi driver has already accepted your request and is on his way to you. Are you sure that you still want to cancel?";
+		msgTaxiFareCancelled =				"あなたは運賃をキャンセルしました";
+		msgTaxiCancelConfirm =				"タクシー運転手があなたの要求を受け、あなたの元へ向かっています。キャンセルしてもよろしいですか？";
 		msgTaxiCancelHeader	=				"Cancel Taxi Call";
 		msgTaxiCancelButtonConfirm =		"Yes";
 		msgTaxiCancelButtonCancel =			"No";
-		msgTaxiCancelDriverConfirm =		"Are you sure that you want to cancel the fare? If a base price has already been transferred to you, it will be transferred back to the customer again.";
-		msgTaxiMeterInfoText = 				"<t>Total Distance</t><t align='right' font='RobotoCondensedBold'>%1</t><br/><t>Time Elapsed</t><t align='right' font='RobotoCondensedBold'>%2</t><br/><t>Total Price (%3$/km)</t><t align='right' font='RobotoCondensedBold'>%4</t>";
+		msgTaxiCancelDriverConfirm =		"運賃をキャンセルしてもよろしいですか？既に基本価格がお客様に転送されている場合は、再度その価格が顧客に返還されます";
+		msgTaxiMeterInfoText = 				"<t>総距離</t><t align='right' font='RobotoCondensedBold'>%1</t><br/><t>時間が経過した</t><t align='right' font='RobotoCondensedBold'>%2</t><br/><t>合計金額 (%3$/km)</t><t align='right' font='RobotoCondensedBold'>%4</t>";
 		msgTaxiMeterStatusTextActive = 		"<t align='right' font='RobotoCondensedBold'>ACTIVE</t>";
 		msgTaxiMeterStatusTextInactive = 	"<t align='right' font='RobotoCondensedBold'>INACTIVE</t>";
-		masTaxiInfoPleaseWait =				"<t size='2'>%1 is on his way to you!</t><br/>Please wait at your current location for your taxi driver. He is currently %2 away.</t>";
-		msgTaxiFareCancelledAsCustomer =	"Your taxi driver has cancelled the fare";
-		masTaxiFareCancelledAsDriver =		"Your customer has cancelled the fare.";
-		msgTaxiCallAccepted =				"A taxi driver driver is on his way";
-		msgTaxiDriverNotAvailable =			"You do not meet the requirements to work as a taxi driver";
-		msgTaxiDestinationUpdated =			"The destination has been updated";
-		msgTaxiNoRoadNearFound =			"No road segment near position found!";
-		msgTaxiCannotCallWhileDriver =		"You cannot call a taxi while being on-duty as a taxi driver!";
-		msgTaxiCannotDriveWhileCalling =	"You cannot work as a taxi driver while calling one yourself!";
-		msgTaxiSpamClickPrevention =		"You cannot do this action so fast!";
-		msgTaxiAlreadyInFare =				"You have already accepted a fare!";
-		msgCallTaxi =						"Call Taxi";
-		msgBaseNotAffordable =				"You do not have enough money to call a taxi!";
-		msgPaidCustomer =					"You have reached your destination.<br/>Total payment made: %1$";
-		msgNotFullyPaidCustomer =			"You have reached your destination. You could not afford the total amount of %1$, instead %2$ (excluding base fee) have been paid!";
-		msgPaidDriver =						"You have reached the destination.<br/>Your customer has paid you <t color='#43a047'>%1$</t>.";
-		msgNotFullyPaidDriver =				"You have reached the destination. Your customer could not pay you the full amount of <t color='#43a047'>%1$</t>, instead <t color='#43a047'>%2$</t> (excluding base fee) have been transferred to you.";
-		msgPayCustomer =					"You have reached your destination.<br/>The total payment that has be made is %1$.";
-		msgPayDriver =						"You have reached the destination.<br/>Your customer has been prompted to pay %1$.";
-		msgTotalPayment =					"Total payment: %1$";
-		msgTaximeterPositionSaved =			"Taximeter position saved";
-		msgTaximeterPositionReset =			"Taximeter position reset";
+		masTaxiInfoPleaseWait =				"<t size='2'>%1 あなたの元に向かっています</t><br/>現在の場所でお待ちください。彼は現在 %2 離れて</t>";
+		msgTaxiFareCancelledAsCustomer =	"タクシー運転手が運賃をキャンセルしました";
+		masTaxiFareCancelledAsDriver =		"お客様が運賃をキャンセルしました";
+		msgTaxiCallAccepted =				"タクシーはあなたの元へ移動中です";
+		msgTaxiDriverNotAvailable =			"タクシー運転手として働くための要件を満たしていません";
+		msgTaxiDestinationUpdated =			"目的地が更新されました";
+		msgTaxiNoRoadNearFound =			"位置付近の道路セグメントは見つかりませんでした";
+		msgTaxiCannotCallWhileDriver =		"タクシー運転手として勤務中にタクシーコールをすることはできません！";
+		msgTaxiCannotDriveWhileCalling =	"自分でタクシーコールをしている間は、タクシー運転手として働くことはできません！";
+		msgTaxiSpamClickPrevention =		"このアクションをとても速くすることはできません！";
+		msgTaxiAlreadyInFare =				"あなたはすでに運賃を受け入れました！";
+		msgCallTaxi =						"コールタクシー";
+		msgBaseNotAffordable =				"あなたはタクシーを呼び出すのに十分なお金がありません！";
+		msgPaidCustomer =					"目的地に到着しました<br/>合計支払額: %1$";
+		msgNotFullyPaidCustomer =			"目的地に到着しました あなたは余裕がありませんでした の総量 %1$, 代わりに %2$ （基本料金を除く）が支払われました";
+		msgPaidDriver =						"目的地に到着しました<br/>乗客はあなたに支払った <t color='#43a047'>%1$</t>.";
+		msgNotFullyPaidDriver =				"目的地に到着しました 乗客はあなたに全額を支払うことができませんでした <t color='#43a047'>%1$</t>, 代わりに <t color='#43a047'>%2$</t> （基本料金を除く）が譲渡されました";
+		msgPayCustomer =					"目的地に到着しました<br/>支払額の合計額は %1$.";
+		msgPayDriver =						"目的地に到着しました<br/>乗客の支払いは %1$.";
+		msgTotalPayment =					"お支払い総額: %1$";
+		msgTaximeterPositionSaved =			"タクシーメーターの位置が保存されました";
+		msgTaximeterPositionReset =			"タクシーメーター位置のリセット";
 		msgTaxiPressSpaceSaveSettings = 	"Press [SPACE] to save";
-		msgNowOnDuty =						"You are now on duty and will receive notifications when a taxi call comes in!";
-		msgNowOffDuty =						"You are now off duty";
-		msgTaxiMenuActiveCalls =			"View Active Calls";
-		msgTaxiNewCallCreated = 			"A new taxi call has been created";
-		msgTaxiBillingPayment =				"Total payment by driven distance";
-		msgTaxiBillingDriverMissingP =		"Amount not affordable by customer";
-		msgTaxiBillingBasePrice =			"Base Price";
-		msgTaxiBillingCustomerMissingP =	"Amount not affordable";
-		msgTaxiCurrentFareInformation =		"Current Fare Information";
-		msgTaxiBillingCancelled =			"Fare cancelled";
+		msgNowOnDuty =						"現在勤務中。タクシーコールが来たら通知を受け取ります";
+		msgNowOffDuty =						"あなたは現在勤務していません";
+		msgTaxiMenuActiveCalls =			"アクティブなタクシーコールを見る";
+		msgTaxiNewCallCreated = 			"新しいタクシーコールが作成されました";
+		msgTaxiBillingPayment =				"駆動距離による合計支払い";
+		msgTaxiBillingDriverMissingP =		"顧客が手頃ではない金額";
+		msgTaxiBillingBasePrice =			"初乗り運賃";
+		msgTaxiBillingCustomerMissingP =	"手頃な価格ではない";
+		msgTaxiCurrentFareInformation =		"現在の運賃情報";
+		msgTaxiBillingCancelled =			"運賃がキャンセルされた";
 
 
 		// Tasks
-		msgTaskDriverPickupDescription =	"Pick up your passenger at this location";
-		msgTaskDriverPickupDescriptionS =	"PICK UP";
-		msgTaskDriverPickupHUD =			"Pick Up";
+		msgTaskDriverPickupDescription =	"この場所で乗客を拾う";
+		msgTaskDriverPickupDescriptionS =	"拾う";
+		msgTaskDriverPickupHUD =			"拾う";
 
-		msgTaskCustomerDriverDescription =	"Get into your taxi drivers vehicle";
-		msgTaskCustomerDriverDescriptionS =	"GET IN";
-		msgTaskCustomerDriverHUD =			"Get In";
+		msgTaskCustomerDriverDescription =	"タクシーに乗る";
+		msgTaskCustomerDriverDescriptionS =	"乗車";
+		msgTaskCustomerDriverHUD =			"乗車";
 
-		msgTaskDriverGoToDescription =		"Customer destination";
-		msgTaskDriverGoToDescriptionS =		"DESTINATION";
-		msgTaskDriverGoToDriverHUD =		"Move Here";
+		msgTaskDriverGoToDescription =		"顧客の目的地";
+		msgTaskDriverGoToDescriptionS =		"目的地";
+		msgTaskDriverGoToDriverHUD =		"ここへ行く";
 
-		#define dialogCallTaxiTitle			"Taxi Service"
-		#define dialogCancelTaxi			"Cancel Taxi Request"
+		#define dialogCallTaxiTitle			"タクシーサービス"
+		#define dialogCancelTaxi			"タクシー要請をキャンセル"
 		#define dialogClose					"Close"
-		#define dialogTaxiMeter				"Taxi-Meter"
-		#define dialogTaxiFareList			"Available Taxi Calls"
-		#define dialogTaxiGoOnDuty			"Go On Duty"
-		#define dialogTaxiGoOffDuty			"Go Off Duty"
-		#define dialogTaxiAcceptCall		"Accept Selected Call"
-		#define dialogTaxiCancelCall		"Cancel Current Call"
-		#define dialogMenuCustomer			"Call A Taxi"
-		#define dialogMenuDriver			"Work as a driver"
-		#define dialogMenuSettings			"Settings"
-		#define dialogDestination			"Destination"
-		#define dialogHowToDestination		"Double-click a position on the map to mark it as your destination. If you already have a taxi driver coming to you, he will be notified of the updated position."
-		#define dialogStatusTitle			"Call Status"
-		#define dialogStatusMarkedDest		"Destination Selected"
-		#define dialogStatusCreatedCall		"Taxi Call Created"
-		#define dialogStatusDriverFound		"Taxi Driver Accepted Call"
-		#define dialogStatusPickedUp		"Get Picked Up"
-		#define dialogSettingsCustomizePos	"Taximeter Position"
-		#define dialogSettingsCustomize		"Customize"
-		#define dialogSettingsReset			"Reset"
-		#define dialogDragMe				"Drag Me"
-		#define dialogFareSummaryTitle		"Fare Summary"
+		#define dialogTaxiMeter				"タクシーメーター"
+		#define dialogTaxiFareList			"受諾待ちタクシーコール"
+		#define dialogTaxiGoOnDuty			"業務を開始"
+		#define dialogTaxiGoOffDuty			"業務を停止"
+		#define dialogTaxiAcceptCall		"選択した要請を承諾"
+		#define dialogTaxiCancelCall		"現在の要請をキャンセルする"
+		#define dialogMenuCustomer			"コールタクシー"
+		#define dialogMenuDriver			"タクシードライバーとして働く"
+		#define dialogMenuSettings			"設定"
+		#define dialogDestination			"目的地"
+		#define dialogHowToDestination		"マップ上の位置をダブルクリックして目的地をマークします。既にタクシー運転手が来ている場合、更新された位置が通知されます"
+		#define dialogStatusTitle			"コールステータス"
+		#define dialogStatusMarkedDest		"目的地選択"
+		#define dialogStatusCreatedCall		"タクシーコール作成"
+		#define dialogStatusDriverFound		"タクシーコール受諾"
+		#define dialogStatusPickedUp		"拾う"
+		#define dialogSettingsCustomizePos	"メーターポジション"
+		#define dialogSettingsCustomize		"カスタマイズ"
+		#define dialogSettingsReset			"リセット"
+		#define dialogDragMe				"ドラッグして任意の場所へ移動"
+		#define dialogFareSummaryTitle		"運賃概要"
 		#define dialogSummaryClosePromt		"[ALT]+[T] to close"
-		#define dialogAvaibleDrivers		"Available Drivers"
+		#define dialogAvaibleDrivers		"勤務中のタクシー"
 	};
 };
 
